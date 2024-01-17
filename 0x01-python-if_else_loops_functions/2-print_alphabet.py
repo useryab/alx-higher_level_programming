@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for codepoint in range(97, 123):
-    print(chr(codepoint), end="")
+for int in range(97, 123):
+    print(chr(int), end="")
