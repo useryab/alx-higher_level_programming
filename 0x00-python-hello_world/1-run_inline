@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 python3 -c "$PYCODE"
 # python3: Invokes the Python 3 interpreter to execute Python code
 # -c: is a flag used run the python program from within the Command Line(CLI) 
