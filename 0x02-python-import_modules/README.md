@@ -4,7 +4,7 @@ what are modules?
 how to use them?
 types of modules?
 
-## Resources:book:
+## Resources :book:
 
 * [Modules in Python ](https://www.datacamp.com/tutorial/modules-in-python)
 * []()
