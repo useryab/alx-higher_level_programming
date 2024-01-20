@@ -1,8 +1,16 @@
 # Python Import Modules
 
-what are modules? 
+what are modules?
+
+explain:
+
 how to use them?
+
+explain:
+
 types of modules?
+
+explain:
 
 ## Resources 📚
 
