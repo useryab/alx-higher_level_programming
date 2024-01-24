@@ -1,5 +1,5 @@
-#!usr/bin/python3
-def multiple_returs(sentence):
+#!/usr/bin/python3
+def multiple_returns(sentence):
     if len(sentence) == 0:
         first_letter = None
     else:
