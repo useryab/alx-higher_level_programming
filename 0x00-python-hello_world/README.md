@@ -1,7 +1,5 @@
 # Python - Hello, World
 
-
-
 ## Tasks :page_with_curl:
 
 * **0. Run Python File**
