@@ -66,12 +66,11 @@ keys are mapped to values(string, JSON, BLOB)
 #### 1.2.2.4. Non Relational Gatabases
 
 nonrelational database management systems
-
-* help users create and maintain a non relational database
-* ** mongoDB
-* ** dynamoDB
-* ** apache cassandra
-* ** firebase
+help users create and maintain a non relational database
+* mongoDB
+* dynamoDB
+* apache cassandra
+* firebase
 
 * Are implementation specific
 * ** any non relational datbse falls under this category there are no set language standard
