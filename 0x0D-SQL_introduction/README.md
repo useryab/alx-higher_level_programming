@@ -100,8 +100,6 @@ SQL code is not always Portable to other RDBMS without modification
 
 SQL is 4 Types of languages in one
 
-![](https://miro.medium.com/v2/resize:fit:600/0*9vY3QnX4iHr3uc3_.png)
-
 ### 2. DDL, DML, DQL & DCL(SQL Commands)
 
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20210920153429/new.png)
