@@ -122,3 +122,9 @@ here's a table summarizing the key differences between DDL, DML, DQL, and DCL:
 | **DML (Data Manipulation Language)** | Used to modify existing data within a database. This includes inserting new data, updating existing data, and deleting data.                            | *`INSERT` to add new rows to a table* `UPDATE` to modify existing data in a table * `DELETE` to remove rows from a table |
 | **DQL (Data Query Language)**        | Used to retrieve data from a database.  DQL statements do not modify the data itself.                                                                   | * `SELECT` to retrieve data from one or more tables                                                                      |
 | **DCL (Data Control Language)**      | Used to manage access control to the database. This includes granting and revoking permissions for users to perform various operations on the database. | *`GRANT` to give a user permission to perform an action* `REVOKE` to take away a user's permission to perform an action  |
+
+```SQL
+SELECT employee.name, employee.age
+FROM employee
+WHERE employee.salary > 30000;
+```
