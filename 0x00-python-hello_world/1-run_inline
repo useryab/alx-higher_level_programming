@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 #!/bin/bash
 python3 -c "$PYCODE"
 # python3: Invokes the Python 3 interpreter to execute Python code
 # -c: is a flag used run the python program from within the Command Line(CLI) 
 # "$PYCODE":  Represents a variable containing Python code that will be executed'
+=======
+#!/bin/bash
+python -c "$PYCODE"
+>>>>>>> 18089313bf331b15816d82d256d82ac0c96c6a2a

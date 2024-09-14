@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # alx-higher_level_programming 
 
 ## python Programming 101
@@ -531,3 +532,7 @@ while a < 1000:
 0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,
 ```
 `````
+=======
+# alx-higher_level_programming
+Welcome to the Python world!
+>>>>>>> 18089313bf331b15816d82d256d82ac0c96c6a2a
