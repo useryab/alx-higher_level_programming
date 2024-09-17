@@ -1,17 +1,15 @@
 #!/usr/bin/node
+// imports a dict and computes a dict by ocurrences
 const dict = require('./101-data').dict;
-
-const totalist = Object.entries(dict);
-const vals = Object.values(dict);
-const valsUniq = [...new Set(vals)];
 const newDict = {};
-for (const j in valsUniq) {
-  const list = [];
-  for (const k in totalist) {
-    if (totalist[k][1] === valsUniq[j]) {
-      list.unshift(totalist[k][0]);
-    }
+let lista = [];
+for (const [key, value] of Object.entries(dict)) {
+  if (!(value in newDict)) {
+    lista = [];
+  } else {
+    lista = newDict[value];
   }
-  newDict[valsUniq[j]] = list;
+  lista.push(key);
+  newDict[value] = lista;
 }
 console.log(newDict);
