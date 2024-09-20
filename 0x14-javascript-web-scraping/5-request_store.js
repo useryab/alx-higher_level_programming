@@ -1,16 +1,7 @@
 #!/usr/bin/node
-const fs = require('fs');
+// gets content of webpage and save it to file
 const request = require('request');
-const process = require('process');
-
-request(process.argv[2], function (error, response, body) {
-  if (error) {
-    console.log(error);
-  } else {
-    fs.writeFile(process.argv[3], body, 'utf8', function (error, data) {
-      if (error) {
-        console.log(error);
-      }
-    });
-  }
-});
+const fs = require('fs');
+const url = process.argv[2];
+const file = process.argv[3];
+request(url).pipe(fs.createWriteStream(file));

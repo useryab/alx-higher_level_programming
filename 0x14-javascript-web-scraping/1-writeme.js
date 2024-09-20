@@ -1,10 +1,8 @@
 #!/usr/bin/node
+// read contents of file
 const fs = require('fs');
-const path = process.argv[2];
-const argms = process.argv[3];
-
-fs.writeFile(path, argms, function (err) {
-  if (err) {
-    console.log(err);
-  }
+const file = process.argv[2];
+const data = process.argv[3];
+fs.writeFile(file, data, function (err) {
+  if (err) return console.log(err);
 });

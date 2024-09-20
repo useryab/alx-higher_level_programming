@@ -1,23 +1,15 @@
 #!/usr/bin/node
-
+// print number of films of character 18
 const request = require('request');
 const url = process.argv[2];
-let count = 0;
+const character = 'https://swapi-api.hbtn.io/api/people/18/';
+let sum = 0;
 request(url, function (error, response, body) {
-  if (error) {
-    console.log(error);
-  } else {
-    const info = JSON.parse(body); // parse the body to JS object Notation
-    const info2 = info.results; // access to result information
-    for (let i = 0; i < info2.length; i++) {
-      if (info2[i].characters) { // if the characters information its available
-        for (const j of info2[i].characters) {
-          if (j.includes('18')) {
-            count++; // plus count if the ID its 18
-          }
-        }
-      }
+  if (error) return console.error('error:', error);
+  for (const item of JSON.parse(body).results) {
+    if (item.characters.includes(character)) {
+      sum += 1;
     }
-    console.log(count);
   }
+  console.log(sum);
 });

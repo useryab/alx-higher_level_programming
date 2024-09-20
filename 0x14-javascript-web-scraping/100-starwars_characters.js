@@ -1,17 +1,15 @@
 #!/usr/bin/node
-// Characters of a Star Wars movie
+// print starwars movie title where episode id is given
 const request = require('request');
-const url = `https://swapi-api.hbtn.io/api/films/${process.argv[2]}`;
-request(url, 'utf8', (error, response, body) => {
-  if (error) throw error;
-  else {
-    for (const t of JSON.parse(body).characters) {
-      request(t, 'utf8', (error, response, body) => {
-        if (error) throw error;
-        else {
-          console.log(JSON.parse(body).name);
-        }
-      });
-    }
+const idTitle = process.argv[2];
+const url = 'https://swapi-api.hbtn.io/api/films/' + idTitle;
+request(url, function (error, response, body) {
+  if (error) return console.error('error:', error);
+  const list = JSON.parse(body).characters;
+  for (const uri of list) {
+    request(uri, function (error1, response1, body1) {
+      if (error) return console.error(error);
+      console.log(JSON.parse(body1).name);
+    });
   }
 });
